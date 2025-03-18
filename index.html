@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego Multijugador</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Font Awesome -->
+</head>
+<body>
+    <canvas id="gameCanvas"></canvas>
+    <div class="joystick" id="joystick">
+        <div class="stick" id="stick"></div>
+    </div>
+
+    <!-- Botón de chat -->
+    <div id="chat-toggle"><i class="fas fa-comments"></i></div>
+    <div id="chat-container" style="display:none;">
+        <div id="chat-messages"></div>
+        <input type="text" id="chat-input" placeholder="Escribe un mensaje...">
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
